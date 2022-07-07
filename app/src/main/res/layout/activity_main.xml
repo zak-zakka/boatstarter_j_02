@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstBoatActivity" android:id="@+id/coordinatorLayout2">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:theme="@style/Theme.Boatstarter_j_02.AppBarOverlay"
+            android:id="@+id/appBarLayout2" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="411dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="723dp"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/boat_sign_01_50_px"
+            android:id="@+id/pic_boat_blue_01"
+            app:layout_constraintTop_toBottomOf="@+id/clickCounter"
+            android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="105dp" android:layout_marginEnd="256dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="621dp" android:contentDescription="@string/pic_boat_blue_01_text"/>
+    <TextView
+            android:text="@string/pic_boat_blue_01_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/clickCounter"
+            tools:text="@string/pic_boat_blue_01_text" android:padding="10dp"
+            android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingEnd="10dp" android:paddingRight="10dp"
+            android:paddingBottom="10dp" android:textColor="@color/text_color_pink_01"
+            android:textSize="@dimen/text_size_24sp" android:translationX="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="105dp" android:layout_marginEnd="139dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/pic_boat_blue_01" app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
